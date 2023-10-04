@@ -1,7 +1,7 @@
 public class Dueno {
-    int edad=0;
-    String nombre = "";
-    String cedula = "";
+    private int edad=0;
+    private String nombre = "";
+    private String cedula = "";
 
     public String esMayorEdad(){
         String my="";
