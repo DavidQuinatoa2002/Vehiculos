@@ -9,18 +9,25 @@ public class Main {
         auto1.setPuertas(10);
         //auto1.color="Blanco";
         auto1.setColor("Blanco");
-        Motor motor1= auto1.getMotor();
-        int puertas1= auto1.getPuertas();//leer
+        auto1.imprimirColorPuertas();
+
+        Auto auto2 = new Auto(4, "Rojo", 3);
+        auto2.imprimirColorPuertas();
+
+        Dueno dueno1=new Dueno(30,"luis","0122255225");
+        dueno1.imprimirDatosDuenio();
+
+        Motor motor1 = new Motor(2.0,"gasolina");
+        motor1.imprimirDatosMotor();
+
+
+        auto1.setMotor(motor1);
+        auto1.getMotor().imprimirDatosMotor();
+        auto1.setDueno(dueno1);
+        //auto1.getDueno().imprimirDatosDueno();
 
 
 
 
-
-
-
-
-
-
-        Auto auto2= new Auto();
     }
 }

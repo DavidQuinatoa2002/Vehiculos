@@ -2,8 +2,12 @@ public class Motor {
     private double cilindraje=0;
     private String combustible="";
 
+    public Motor(double cilindraje, String combustible) {
+        this.cilindraje = cilindraje;
+        this.combustible = combustible;
+    }
 
-   public double caballosFuerza(){
+    public double caballosFuerza(){
         double cf=0;
         if(combustible.equals("Diesel")){
             //equals sirve para comparar siempre con un string
@@ -20,6 +24,11 @@ public class Motor {
 
     public void setCilindraje(double cilindraje) {
         this.cilindraje = cilindraje;
+    }
+
+    public void imprimirDatosMotor(){
+        System.out.println("EL clininfdraje del motor es: "+cilindraje);
+        System.out.println("EL gasolina del motor es: "+combustible);
     }
 }
 
